@@ -34,7 +34,7 @@ read -p "Press ENTER to continue..."
 # Ports
 drbp=550
 ovpn=1194
-ws_ssh=80
+ws_ssh=8080
 ws_ovpn=2082
 st_ssh=443
 st_ovpn=2083
@@ -617,7 +617,7 @@ cat << info | tee ~/socksproxylog.txt
 |   - Dropbear: 550                   |
 |   - OpenVPN: 1194 (TCP)             |
 |   - WebSocket                       |
-|         80   (SSH/Dropbear)         |
+|         8080 (SSH/Dropbear)         |
 |         2082 (OpenVPN)              |
 |   - Stunnel:                        |
 |         443  (WS + SSH/Dropbear)    |
